@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.himel.complexnumberoperation.ComplexNumberOperationController">
+    <children>
+        <Label layoutX="36.0" layoutY="31.0" prefHeight="18.0" prefWidth="246.0" text="Enter Real value of 1st  Complex Number" />
+        <TextField fx:id="realOf1stCNTextField" layoutX="265.0" layoutY="28.0" />
+        <Label layoutX="36.0" layoutY="63.0" prefHeight="18.0" prefWidth="246.0" text="Enter Img value of 1st  Complex Number" />
+        <TextField fx:id="imgOf1stCNTextField" layoutX="265.0" layoutY="60.0" />
+        <Label layoutX="36.0" layoutY="114.0" prefHeight="18.0" prefWidth="246.0" text="Enter Real value of 2nd  Complex Number" />
+        <TextField fx:id="realOf2ndCNTextField" layoutX="265.0" layoutY="111.0" />
+        <Label layoutX="36.0" layoutY="146.0" prefHeight="18.0" prefWidth="246.0" text="Enter Img value of 2nd Complex Number" />
+        <TextField fx:id="imgOf2ndCNTextField" layoutX="265.0" layoutY="143.0" onAction="#subtractComplexNumberButtonOnMouseClick" />
+        <Button layoutX="36.0" layoutY="217.0" mnemonicParsing="false" onAction="#addComplexNumberButtonOnAction" prefHeight="26.0" prefWidth="200.0" text="Add Complex Numbers" />
+        <Button layoutX="255.0" layoutY="217.0" mnemonicParsing="false" onAction="#subtractComplexNumberButtonOnMouseClick" prefHeight="26.0" prefWidth="200.0" text="Subtract Complex Numbers" />
+        <Label fx:id="resultLabel" layoutX="36.0" layoutY="268.0" prefHeight="26.0" prefWidth="386.0" text="Result" />
+    </children>
+</AnchorPane>
